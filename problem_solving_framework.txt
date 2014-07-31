@@ -1,0 +1,10 @@
+problem_solving_framework.txt
+
+ok so, the problems I've seen on AA interview questions have been more or less similar
+
+- 1st was basically fizzbuzz variants
+- 2nd was cat_hatting
+- 3rd was corgi_golden_age and combine_arrays
+- 4th was stock_picker
+
+
