@@ -1,0 +1,71 @@
+some thoughts:
+
+I've had 4 coding interviews/tests with App Academy
+
+(1) was easy and I did well, nearly finishing all the questions
+	it was a simple online submission
+
+(2) was more difficult and a live session in the browser
+	with an interviewer, I felt I stumbled a lot and wasn't going to
+	"get the answer" in the session but apparently demonstrated
+	(and I suppose communicated verbally) enough knowledge of Ruby and
+	what was needed to solve the problem to convince the interviewer that
+	I was close.
+
+(3) Was a 45 min copy/past submission like the first test with more difficult
+	problems.  I got somewhat close to nailing the first one but was
+	some distance away from solving the second.  I did't get to the bonus at all.
+
+	When I revisited the problems later in the night, I cleaned up and got the
+	first one quickly but it took me maybe an hour to get the second one working properly.  I'm not sure what effect it had.
+
+(4) Suprise coding interview with the co-founder of AA.	 Thought it was going
+	to be more of a conversation about fit/goals/drive etc... but turned out to be a 15 minute timed live coding excercise.
+
+	I thought I did REALLY poorly but apparently conveyed enough to still be considered in a "gray area" (Kush's words), where I'm very close to being where they want me upon entry but not there yet.
+
+	I'm told if I practice some more then I can have another interview and beef my way in there.
+
+	Might as well try it, but there is more practice to be done.
+
+
+
+So what went wrong?
+
+After the very first set of questions, I haven't been doing that well performance-wise by my own estimations.  I've gotten close on the problems, and seem to both understand what the problem is asking and also have the ruby skills to solve it.  But I haven't nailed them.
+
+The question is, why am I not fully getting these questions?
+
+I think it definitely does come down to practice, practice, practice but I question how I have been going about it.  I guess I have to.
+
+These later problems aren't hard but they do require multiple steps and/or different processes going on at the same time.  Occaisonally, they require reading one step deeper to see what hidden information is contained within the problem (eg... net changes, things like that).
+
+Obviously, the time limit in an interview setting is also something to overcome.
+
+So we must practice but I ask how can we practice to get the most out of it and in some ways emulate some of the stresses of the interview setting.
+
+Some general thoughts:
+- have a timer running on every problem
+- have Danny test you with project Euler questions
+- start with Coderbyte easy questions and do them as quickly as possible
+- Practice the euler questions with time devoted to them under timed situations.  When the time is up, stop.  Start with 20 minutes and possible move the time downwards.
+
+I think one thing that will definitely help is a problem solving framework to apply to each problem.  This way, if you step through your progressions, you will stand a substantially better chance of getting the answer.
+
+I will work this up in a separate file - problem_solving_framework.txt
+
+I will also log a "what I learned / takeaways" from each problem to help keep track of whats going on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
