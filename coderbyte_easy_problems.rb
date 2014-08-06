@@ -84,21 +84,74 @@
 
 # we can find and slice the string?
 
-def SimpleSymbols(str)
-	letter_index = 0
+# def SimpleSymbols(str)
+# 	letter_index = 0
+# 	while str[letter_index] != nil
+# 		letter_index = str.index(/[a-z]/)
+# 		if str[letter_index+1] != "+" || str[letter_index-1] != "+"
+# 			return false
+# 		else
+# 			str = str[letter_index+1..-1]
+# 		end
+# 	end
+# 	return true
+# end
 
-	while str[letter_index] != nil
-		letter_index = str.index(/[a-z]/)
+# what did we learn here
+	# - indexing outside the range of a string or array return nil or NilClass object
+	# - this is built to check for + around EVERY character, variations on this
 
-		if str[letter_index+1] != "+" || str[letter_index-1] != "+"
-			return false
-		else
-			str = str[letter_index+1..-1]
-		end
-		
+# p SimpleSymbols("+d+")
+
+
+
+
+# def CheckNums(num1,num2)
+# 	if num1 == num2
+# 		return -1
+# 	elsif num2 > num1
+# 		return true
+# 	else
+# 		return false
+# 	end
+# end
+			
+
+
+def TimeConvert(num)
+	# if num >= 60
+	# 	num_hours = num/60
+	# 	num_minutes = num%60
+	# elsif num < 60
+	# 	num_hours = 0
+	# 	num_minutes = num
+	if num < 60
+		num_hours = 0
+		num_minutes = num
+	elsif num >= 60
+		num_hours = num/60
+		num_minutes = num%60
 	end
-	return true
+	return "#{num_hours}:#{num_minutes}"
 end
 
+# what did we learn here!!
+# - integer division, 5/2 == 2, 5/6 == 0
+# - INTEGER DIVISION DOES NOT ROUND UP (5/2 == 0 BUT 5.0/2 == 2.5)
+# - big to small flow control vs small to big flow control
+	# ^ DOESN'T MATTER HERE BECAUSE YOU ARENT CARRYING REMAINDERS OR OTHER
+	#   NUMBERS TO LATER BITS OF LOGIC
 
-p SimpleSymbols("+d+")
+# p TimeConvert(126)
+
+
+
+
+
+
+
+
+
+
+
+
