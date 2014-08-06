@@ -118,22 +118,22 @@
 			
 
 
-def TimeConvert(num)
-	# if num >= 60
-	# 	num_hours = num/60
-	# 	num_minutes = num%60
-	# elsif num < 60
-	# 	num_hours = 0
-	# 	num_minutes = num
-	if num < 60
-		num_hours = 0
-		num_minutes = num
-	elsif num >= 60
-		num_hours = num/60
-		num_minutes = num%60
-	end
-	return "#{num_hours}:#{num_minutes}"
-end
+# def TimeConvert(num)
+# 	# if num >= 60
+# 	# 	num_hours = num/60
+# 	# 	num_minutes = num%60
+# 	# elsif num < 60
+# 	# 	num_hours = 0
+# 	# 	num_minutes = num
+# 	if num < 60
+# 		num_hours = 0
+# 		num_minutes = num
+# 	elsif num >= 60
+# 		num_hours = num/60
+# 		num_minutes = num%60
+# 	end
+# 	return "#{num_hours}:#{num_minutes}"
+# end
 
 # what did we learn here!!
 # - integer division, 5/2 == 2, 5/6 == 0
@@ -145,7 +145,58 @@ end
 # p TimeConvert(126)
 
 
+# APLHABET SOUP
 
+# def AlphabetSoup(str)
+# 	array = []
+# 	str.each_char do |char|
+# 		array << char
+# 	end
+# 	# p array
+# 	sorted_array = array.sort
+# 	# p sorted_array
+# 	join_array = sorted_array.join()
+# 	return join_array
+# end
+
+# what did we learn here?
+# - str.split() splits on empty characters, so we had to go through each character
+# - and add it to a new array
+# - otherwise its straightforward
+
+# p AlphabetSoup("coderbyte")
+
+
+
+
+
+def ABCheck(str)
+	down_str = str.downcase
+	index = 0
+	down_str.each_char do |char|
+		if char == "a" && down_str[index+4] == "b"
+			return true
+		end
+		index += 1
+	end
+	return false
+# 	perform the check
+
+# 	return true if the condition is met
+
+end
+
+# what did we learn here?
+# - this code works on my comp, but doesn't work in the coderbyte terminal
+# - it never returns true in the coderbyte terminal, even in cases where it "should"
+
+p ABCheck("Laura sobs")
+
+# # need to return true or false
+
+# # return true if "a" and "b" are separated by three non space characters
+
+# # xpect input strings of different cases
 
 
 
