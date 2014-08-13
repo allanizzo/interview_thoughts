@@ -714,6 +714,7 @@
 
 # # =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= =^.^= 
 
+# i want this redone from scratch
 
 def CountingMinutesI(str)
 
@@ -721,17 +722,19 @@ def CountingMinutesI(str)
     p time_arr
     start_time = time_arr[0] #5:38 pm
     end_time = time_arr[1]   #9:44 pm
+    p end_time
     minute_count = 0
     while true
-    	p start_time
+    	p "start_time is #{start_time}"
+    	p "end_time is #{end_time}"
+    	# sleep 0.01
       if start_time == end_time
         return minute_count
       else   
         start_time = clock_updater(start_time)
         minute_count += 1
       end 
-    end  
-    return minute_count 
+    end   
 end
       
 def clock_updater(str)
@@ -747,20 +750,36 @@ def clock_updater(str)
     hours += 1
     mins = 0
   end
-  if hours >= 12 && mins > 0 && am_pm == "am"
+  if hours == 12 && mins == 0
+  	if am_pm == "am"
+  		am_pm = "pm"
+  	elsif am_pm == "pm"
+  		am_pm = "am"
+  	end
+  end
+  			
+  if hours == 12 && mins == 60
   	hours = 1
-    am_pm = "pm"
-  elsif hours >= 12 && mins > 0 && am_pm == "pm"
-  	hours = 1
-    am_pm == "am"
+  	mins = 0
+  end
+  if mins < 10
+  	mins = "0#{mins}"
   end
   return "#{hours}:#{mins}#{am_pm}"
 end
 
 
 # p clock_updater("12:06pm")
-p CountingMinutesI("12:30pm-12:00am")
+p CountingMinutesI("1:23am-1:08am")
 
+
+
+# start = "12:40am"
+# 30.times do
+	
+# 	p clock_updater(start)
+# 	start = clock_updater(start)
+# end
 
 
 
